@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: crosshair;
+} 
+
+.scoreClass{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.scoreTimer{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding-bottom: 25px;
+}
+
+.mainPanal{
+    background: url(../img/stage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+}
+
+.duckImageDiv img {
+    width: 80px;
+    position: absolute;
+    transition: left 0.5s, top 0.5s;
+}
+
+
+
+#aimImage{
+    height: 35px;
+    width:35px;
+    position: absolute;
+    top: 35px;
+    /* left: 35px; */
+    
+}
+
+#bird1{
+    animation: b1 5s infinite;
+    right:100%
+}
+
+@keyframes b1{
+    0%{
+        top:65%;
+        right:10%
+    }
+    25%{
+        top: 30%;
+    }
+    75%{
+        top:10%;
+    }
+    100%{
+        top:50%
+    }
+}
+
+
+.container {
+    color: black;
+    width: 100vw; 
+    height: 100vh;
+    background: url('background.png');
+    position: fixed;
+    font-size: 21px;
+}
+
+.clayshoot {
+    color: black;
+    width: 100vw; 
+    height: 100vh;
+    background: url('ClayShoot.png');
+    position: fixed;
+    font-size: 21px;
+}
+  
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+  
+#username {
+    color: whitesmoke;
+    background-color: black;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    height: 30px;
+}
+
+  
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    background-color: black;
+    color: aliceblue;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 18px;
+}
+
+
+/* Popup background with blur effect */
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #ffffff;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-content h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* .game-gif {
+    width:400px;
+    height:150px;   
+} */
+
+.popup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 0;
+    font-style: normal;
+}
+
+p {
+    flex: 1;
+    text-align: left;
+    
+}
+
+.popup-btn {
+    align-self: flex-end;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.page-btn {
+    text-align: right;
+}
+
+.popup-btn:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+    .popup-content {
+        width: 90%;
+        flex-direction: column; 
+        text-align: center;
+    }
+}
+
+.game-over {
+    padding-left: 300px;
+}
+
+.go-para {
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    padding: 0px 500px;
+
+}
+
+#go-btn {
+    color: orange;
+    background-color: black;
+    font-family: "Press Start 2P", system-ui;
+    font-size: large;
+    height: 50px;
+    width: 300px;
+    
+}

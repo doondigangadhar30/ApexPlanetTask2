@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Results</title>
+
+    <style>
+         body {
+            background-color: rgba(33,33,33,255);
+            color: beige;  
+        }
+    </style>
+</head>
+
+<body>
+        <div class="game-over">
+            <img src="gameOver.gif" alt="GAME OVER" height="500" width="900">
+        </div>
+        <div class="go-para">
+        <p>Thank you for playing, <span id="displayUsername"></span>!</p>
+        <p>Your score is: <span id="displayScore"></span></p>
+        <button onclick="restartGame()" id="go-btn">Play Again</button>  
+    </div>
+
+    <audio autoplay style="display: none;">
+        <source src="gameover.mp3" type="audio/ogg">
+    </audio>
+
+    <script>
+        // username and score from local storage
+        document.getElementById("displayUsername").textContent = localStorage.getItem("username") || "Guest";
+        document.getElementById("displayScore").textContent = localStorage.getItem("finalScore") || 0;
+
+        // restart
+        function restartGame() {
+            localStorage.removeItem("finalScore"); 
+            window.location.href = "gameA.html"; 
+        }
+    </script>
+</body>
+</html>

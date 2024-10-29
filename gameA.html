@@ -1,0 +1,89 @@
+<!-- 
+  ApexPlanet Task: 02/05
+  Project: Duck Hunt Web Application
+  Uploaded: Sunday, 27 October 2024
+  Author: R Doondi Gangadhar
+  GAME A PAGE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GAME A</title>
+</head>
+
+<style>
+    h2 {
+        color: crimson;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="popup" id="popup">
+            <div class="popup-content" id="popup-content">
+                <div id="page1">
+                    <h2>Instructions</h2>
+                    <p>
+                        <ul>
+                            <li>Use your mouse to aim and shoot ducks.</li>
+                            <br>
+                            <li>Aim carefully — each hit counts!</li>
+                            <br>
+                            <li>Ducks fly fast and randomly, so stay alert!</li>
+                            <br>
+                            <li>The faster you shoot, the more points you score!</li>
+                        </ul>
+                    </p>
+                    <div class="page-btn">
+                        <button onclick="nextPage()" class="popup-btn">Next</button>
+                    </div>
+                </div>
+
+                <div id="page2" style="display: none;">
+                    <h2>Sample Game</h2>
+                    <div class="game-gif">
+                        <img src="gifA.gif" alt="duck" width="400">
+                    </div>
+
+                    <div class="username">
+                        <form onsubmit="return saveUsername()">
+                            <p style="font-size: 13px; color: blue;">Username:
+                                <input type="text" id="username" placeholder="Enter your name here">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="page-btn">
+                        <button onclick="saveUsername(); window.location.href='main.html'" class="popup-btn">Let’s Start</button>
+                    </div>
+
+                    <audio autoplay loop style="display: none;">
+                        <source src="gameAB.mp3" type="audio/ogg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function saveUsername() {
+                const username = document.getElementById("username").value;
+                if (username) {
+                    localStorage.setItem("username", username);
+                }
+                return false;
+            }
+
+            window.onload = function() {
+                document.getElementById("popup").style.display = "flex";
+            };
+
+            function nextPage() {
+                document.getElementById("page1").style.display = "none";
+                document.getElementById("page2").style.display = "block";
+            }
+        </script>
+    </div>
+</body>
+</html>

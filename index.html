@@ -1,0 +1,89 @@
+<!-- 
+  ApexPlanet Task: 02/05
+  Project: Duck Hunt Web Application
+  Uploaded: Wednesday, 30 October 2024
+  Author: R Doondi Gangadhar
+
+    Adjust Site Permissions:
+
+    Go to Settings > Cookies and site permissions > Media autoplay.
+    Set the Media autoplay option to Allow to enable autoplay on all sites, or add a specific site to the allowlist.
+-->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: beige;  
+        }
+        #logo {
+            padding-left: 300px;
+            padding-top: 5px;
+        }
+        table {
+            width: 80%;
+            text-align: center;
+            padding-left: 450px;
+            font-family: "Press Start 2P", system-ui;
+            font-weight: 0;
+            font-style: normal;
+            color: orange;
+        }
+        #link {
+            text-decoration: none;
+            color: orange;
+        }
+        #dh-footer {
+            color: whitesmoke;
+            text-align: center;
+            font-size: 15px;
+            font-family: "Press Start 2P", system-ui;
+            padding-top: 10px;
+        }
+        #dh-score {
+            color: green;
+            text-align: center;
+            font-size: 20px;
+            font-family: "Press Start 2P", system-ui;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dh-logo">
+        <img src="duckHuntLogo.jpg" id="logo" alt="duckHuntLogo" height="500" width="900">
+    </div>
+    <div class="dh-para">
+        <table>
+            <tr>
+                <td><h2><a href="gameA.html" id="link" title="Level 1">GAME A</a></h2></td>
+                <td><h2>EASY LEVEL</h2></td>
+            </tr>
+            <tr>
+                <td><h2><a href="gameB.html" id="link" title="Level 2">GAME B</a></h2></td>
+                <td><h2>MEDIUM LEVEL</h2></td>
+            </tr>
+            <tr>
+                <td><h2><a href="gameC.html" id="link">GAME C</a></h2></td>
+                <td><h2>CLAY SHOOTING</h2></td>
+            </tr>
+        </table> 
+        <div class="score">
+            <h2 id="dh-score">HIGH SCORE = 12000</h2>
+        </div>
+
+        <audio autoplay loop style="display: none;">
+            <source src="index.mp3" type="audio/ogg">
+        </audio>
+
+        <footer>
+            <h2 id="dh-footer">&copy; 2024 R Doondi Gangadhar. All rights reserved.</h2>
+        </footer>
+    </div>
+</body>
+</html>
