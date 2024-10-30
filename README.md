@@ -26,6 +26,6 @@ Here's a preview of the game in action: <br>
 
 ## Links 📌
 
-- [Live Site URL](https://doondigangadhar30.github.io/ApexPlanetTask2/)
+- Live site URL:  [click here](https://doondigangadhar30.github.io/ApexPlanetTask2/)
 - Project Repo: https://github.com/doondigangadhar30/ApexPlanetTask2
 - Let's connect: [LinkedIn](https://www.linkedin.com/in/doondi/) 
