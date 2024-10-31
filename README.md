@@ -21,13 +21,13 @@ Welcome to the **Duck Hunt Game! Task 2**
 - JavaScript
 
 ## Sample Game
-Here's a preview of the game in action: <br>
-## Homepage
+Here's a preview of the game in action:
+
+- **Homepage**
 ![Screenshot_31-10-2024_18147_127 0 0 1](https://github.com/user-attachments/assets/3975cd6c-9870-4755-ae7b-9a7fb9f9b497)
 
-## Sample Game 
+- **Sample Game**
 ![Screenshot_31-10-2024_1826_127 0 0 1](https://github.com/user-attachments/assets/b3840379-809e-4a59-b4c2-206c16942b00)
-<br>
 ![Screenshot_31-10-2024_18225_127 0 0 1](https://github.com/user-attachments/assets/d3c1da0b-f577-4811-bba6-61f7a980b437)
 
 ## Links 📌
