@@ -1,8 +1,9 @@
 # Duck Hunt Game 🎯🦆
-Welcome to the **Duck Hunt Game!** Task 2
+Welcome to the **Duck Hunt Game! Task 2**
 
 ## In Last Task ✨
 - Developed the initial game instruction pop-up using basic HTML and CSS.
+- Task 1 repo [Click here](https://github.com/doondigangadhar30/ApexPlanetTask1)
 
 ## TASK 02: 🎶 Game UI and Sound Enhancements
 ### Features Added in Task 02:
@@ -17,7 +18,7 @@ Welcome to the **Duck Hunt Game!** Task 2
 ## Tech Stack
 - HTML
 - CSS
-- JavaScript (for game logic and interactivity)
+- JavaScript
 
 ## Sample Game
 Here's a preview of the game in action: <br>
